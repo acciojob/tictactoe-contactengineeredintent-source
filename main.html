@@ -4,13 +4,69 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+	<div
+      id="form-container"
+      class="d-flex flex-column align-items-center position-absolute top-50 start-50 translate-middle"
+    >
+      <h1>TIC TAC TOE</h1>
+      <!--form section -->
+      <form
+        action=""
+        method="post"
+        id="MyForm"
+        class="d-flex flex-column align-items-center"
+      >
+        <div class="p-1">
+          <label for="player_1">Player 1</label>
+          <input
+            type="text"
+            name="player_1"
+            id="player-1"
+            placeholder="enter name"
+            required
+          />
+        </div>
+        <div class="p-1">
+          <label for="player_2">Player 2</label>
+          <input
+            type="text"
+            name="volume"
+            id="player-2"
+            placeholder="enter name"
+          />
+        </div>
+        <input
+          type="submit"
+          value="Start Game"
+          id="submit"
+          class="m-2 text-bg-light p-1 rounded"
+        />
+      </form>
+      <!-- game section -->
+      <div id="player-name-tag" class="d-flex fs-5"></div>
+      <div id="game-panel" class="grid-box d-grid m-3">
+        <div class="d-flex grid-element" id="1"></div>
+        <div class="d-flex grid-element" id="2"></div>
+        <div class="d-flex grid-element" id="3"></div>
+        <div class="d-flex grid-element" id="4"></div>
+        <div class="d-flex grid-element" id="5"></div>
+        <div class="d-flex grid-element" id="6"></div>
+        <div class="d-flex grid-element" id="7"></div>
+        <div class="d-flex grid-element" id="8"></div>
+        <div class="d-flex grid-element" id="9"></div>
+      </div>
+    </div>
 </body>
+    <script type="text/javascript" src="./script.js"></script>
 
 </html>

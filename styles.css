@@ -1,1 +1,19 @@
 /*  your css code here. If applicable */
+
+#submit{
+  width:200px;
+}
+body{
+  font-family: "Permanent Marker", cursive;
+}
+.grid-box{
+  grid-template-columns: repeat(3,1fr);
+}
+.grid-element{
+  border:1px solid black;
+  width:100px;
+  height:100px;
+  background-color:#FFC0CB;
+  align-items:center;
+  justify-content:center;
+}
